@@ -1,6 +1,6 @@
 import './App.css';
-import Example from './Class/StateExample1/Example';
-import Example2 from './Hooks/StateExample1/Example';
+import Example from './Class/StateExample/Example';
+import Example2 from './Hooks/StateExample/Example';
 
 function App() {
 
