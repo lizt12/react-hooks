@@ -13,12 +13,16 @@ function App() {
       <Example2></Example2> */}
       <Router>
         <ul>
-          <li><Link to="/">类生命周期实例</Link></li>
-          <li><Link to="/hooks">Hooks生命周期实例</Link></li>
+          <li><Link to="/">类State实例</Link></li>
+          <li><Link to="/hooks/state">HooksState实例</Link></li>
+          <li><Link to="/class/life">类生命周期实例</Link></li>
+          <li><Link to="/hooks/life">Hooks生命周期实例</Link></li>
         </ul>
         <Routes>
-          <Route path="/" exact={false} element={<LifeExample/>} />
-          <Route path="/hooks" exact={false} element={<LifeExample2/>} />
+          <Route path="/" exact={false} element={<Example/>} />
+          <Route path="/hooks/state" exact={false} element={<Example2/>} />
+          <Route path="/class/life" exact={false} element={<LifeExample/>} />
+          <Route path="/hooks/life" exact={false} element={<LifeExample2/>} />
         </Routes>
       </Router>
 
