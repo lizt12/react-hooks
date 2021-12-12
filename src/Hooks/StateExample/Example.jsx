@@ -6,6 +6,7 @@ export default function Example() {
     const [sex, setSex] = useState(true);
     return (
         <div>
+            <h1>HooksState实例</h1>
             <p>今年：{age}岁</p>
             <button onClick={() => { setAge(age + 1); }}>
                 点我加1

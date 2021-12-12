@@ -5,6 +5,8 @@ import LifeExample from './Class/LifeExample/LifeExample';
 import LifeExample2 from './Hooks/LifeExample/LifeExample';
 import PropsExample1 from './Class/PropsExample/PropsExample1';
 import PropsExample2 from './Hooks/PropsExample/PropsExample1';
+import ReduxExample1 from './Class/ReduxExample/ReduxExample1';
+import ReduxExample2 from './Hooks/ReduxExample/ReduxExample1';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
           <li><Link to="/hooks/life">Hooks生命周期实例</Link></li>
           <li><Link to="/class/props">类Props实例</Link></li>
           <li><Link to="/hooks/props">HooksProps实例</Link></li>
+          <li><Link to="/class/redux">类Redux实例</Link></li>
+          <li><Link to="/hooks/redux">HooksRedux实例</Link></li>
         </ul>
         <Routes>
           <Route path="/" exact={false} element={<Example/>} />
@@ -27,6 +31,8 @@ function App() {
           <Route path="/hooks/life" exact={false} element={<LifeExample2/>} />
           <Route path="/class/props" exact={false} element={<PropsExample1/>} />
           <Route path="/hooks/props" exact={false} element={<PropsExample2/>} />
+          <Route path="/class/redux" exact={false} element={<ReduxExample1/>} />
+          <Route path="/hooks/redux" exact={false} element={<ReduxExample2/>} />
         </Routes>
       </Router>
     </div>

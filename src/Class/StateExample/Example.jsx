@@ -8,6 +8,7 @@ export default class Example extends Component {
   render() {
     return (
       <div>
+        <h1>类State实例</h1>
         <p>今年：{this.state.age}岁</p>
         <button onClick={() => { this.setState({ age: ++this.state.age }); }}>
           点我加1
